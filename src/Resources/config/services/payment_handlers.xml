@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ReepayPayments\Handler\Method\CreditCardPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\DankortPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\VisaPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\VisaElectronPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\MasterCardPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\AmericanExpressPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\MobilePayPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\ViaBillPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\KlarnaPayLaterPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\KlarnaPayNowPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\KlarnaSliceItPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\ResursBankPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\SwishPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\VippsPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\DinersClubPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\MaestroPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\LaserPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\DiscoverPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\JCBPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\ChinaUnionPayPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\ForbrugsforeningenPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\PayPalPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\ReepayCheckoutPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\ApplePayPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Handler\Method\GooglePayPaymentType">
+            <tag name="shopware.payment.method.async"/>
+            <tag name="reepay_payments.handler"/>
+            <argument type="service" id="ReepayPayments\Service\Api\SessionApi"/>
+            <argument type="service" id="ReepayPayments\Service\Api\InvoiceApi"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+    </services>
+</container>

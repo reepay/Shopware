@@ -1,0 +1,9 @@
+{
+    "reepay-apikey-input": {
+        "test-button": "Test API key",
+        "success": "Success!",
+        "success-description": "The API key is working correctly.",
+        "error": "Error!",
+        "error-description": "The API key is invalid."
+    }
+}

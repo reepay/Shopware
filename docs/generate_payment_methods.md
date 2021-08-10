@@ -1,0 +1,28 @@
+I've added a generator to be able to quickly (re)generate the payment method handler classes.
+
+```bash
+bin/console reepay:dev:add-payment-method "card" "Credit Card"
+bin/console reepay:dev:add-payment-method "dankort" "Dankort"
+bin/console reepay:dev:add-payment-method "visa" "VISA"
+bin/console reepay:dev:add-payment-method "visa_elec" "VISA Electron"
+bin/console reepay:dev:add-payment-method "mc" "MasterCard"
+bin/console reepay:dev:add-payment-method "amex" "American Express"
+bin/console reepay:dev:add-payment-method "mobilepay" "MobilePay"
+bin/console reepay:dev:add-payment-method "viabill" "ViaBill"
+bin/console reepay:dev:add-payment-method "klarna_pay_later" "Klarna Pay Later"
+bin/console reepay:dev:add-payment-method "klarna_pay_now" "Klarna Pay Now"
+bin/console reepay:dev:add-payment-method "klarna_slice_it" "Klarna Slice It"
+bin/console reepay:dev:add-payment-method "resurs" "Resurs Bank"
+bin/console reepay:dev:add-payment-method "swish" "Swish"
+bin/console reepay:dev:add-payment-method "vipps" "Vipps"
+bin/console reepay:dev:add-payment-method "diners" "Diners Club"
+bin/console reepay:dev:add-payment-method "maestro" "Maestro"
+bin/console reepay:dev:add-payment-method "laser" "Laser"
+bin/console reepay:dev:add-payment-method "discover" "Discover"
+bin/console reepay:dev:add-payment-method "jcb" "JCB"
+bin/console reepay:dev:add-payment-method "china_union_pay" "China Union Pay"
+bin/console reepay:dev:add-payment-method "ffk" "Forbrugsforeningen"
+bin/console reepay:dev:add-payment-method "paypal" "PayPal"
+bin/console reepay:dev:add-payment-method "applepay" "Apple Pay"
+bin/console reepay:dev:add-payment-method "googlepay" "Google Pay"
+```

@@ -1,0 +1,22 @@
+{
+    "name": "reepay/shopware6-plugin",
+    "description": "Shopware 6 plugin for Reepay",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "ReepayPayments\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "ReepayPayments\\ReepayPayments",
+        "label": {
+            "de-DE": "Reepay",
+            "en-GB": "Reepay"
+        }
+    },
+    "require": {
+        "adnedelcu/reepay-php-api": "^1.0"
+    }
+}

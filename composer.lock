@@ -1,0 +1,74 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b905e497a6fe38e3ff0401761862d647",
+    "packages": [
+        {
+            "name": "adnedelcu/reepay-php-api",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adnedelcu/reepay-php-api.git",
+                "reference": "2889a644ee519c805b69866aaf2d89814dc0cc21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adnedelcu/reepay-php-api/zipball/2889a644ee519c805b69866aaf2d89814dc0cc21",
+                "reference": "2889a644ee519c805b69866aaf2d89814dc0cc21",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.12",
+                "phpunit/phpunit": "~4.8",
+                "satooshi/php-coveralls": "~1.0",
+                "squizlabs/php_codesniffer": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Reepay\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Swagger and contributors",
+                    "homepage": "https://github.com/swagger-api/swagger-codegen"
+                }
+            ],
+            "homepage": "http://swagger.io",
+            "keywords": [
+                "api",
+                "php",
+                "sdk",
+                "swagger"
+            ],
+            "support": {
+                "issues": "https://github.com/adnedelcu/reepay-php-api/issues",
+                "source": "https://github.com/adnedelcu/reepay-php-api/tree/1.0.6"
+            },
+            "time": "2020-10-07T09:29:14+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

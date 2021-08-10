@@ -1,0 +1,16 @@
+{% block sw_settings_payment_detail_content_card %}
+    {% parent %}
+
+    <sw-card :title="$tc('sw-settings-payment-detail.reepay.cardTitle')" v-if="isReepayMethod">
+        <sw-switch-field v-model="paymentMethod.customFields.reepay_instant_settle"
+                           :label="$tc('sw-settings-payment-detail.reepay.instantSettle')">
+        </sw-switch-field>
+
+        <div v-if="isReepayCheckoutMethod">
+            <sw-multi-select label="Methods"
+                             :isLoading="reepayPaymentMethodsLoading"
+                             v-model="paymentMethod.customFields.reepay_payment_methods"
+                             :options="reepayPaymentMethods"></sw-multi-select>
+        </div>
+    </sw-card>
+{% endblock %}

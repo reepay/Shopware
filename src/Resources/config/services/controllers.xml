@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ReepayPayments\Administration\Controller\ApiKeyTestController" public="true">
+            <argument type="service" id="ReepayPayments\Service\Api\TestApi"/>
+        </service>
+        <service id="ReepayPayments\Administration\Controller\ReepayMethodsController" public="true">
+            <argument type="tagged_iterator" tag="reepay_payments.handler"/>
+        </service>
+    </services>
+</container>

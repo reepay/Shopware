@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Reepay API</title>
+
+        <input-field type="bool">
+            <name>enableTestMode</name>
+            <label>Enable test mode</label>
+        </input-field>
+
+        <component name="reepay-apikey-input">
+            <name>apiKeyLive</name>
+            <label>Live Private API Key</label>
+        </component>
+
+        <component name="reepay-apikey-input">
+            <name>apiKeyTest</name>
+            <label>Test Private API Key</label>
+        </component>
+
+        <component name="reepay-configuration-hidden">
+            <name>firstSetupDone</name>
+            <defaultValue>false</defaultValue>
+        </component>
+    </card>
+
+    <card>
+        <title>Webhooks</title>
+
+        <input-field>
+            <name>failedWebhooksEmail</name>
+            <label>Email address for notificatoin about failed webhooks</label>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Order state sync</title>
+
+        <input-field type="bool">
+            <name>orderStateSettleInvoiceOnComplete</name>
+            <label>Settle Invoice on ReePay on order complete in Shopware</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStateSettled</name>
+            <label>Order state when transaction becomes 'SETTLED'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                    <name lang="en-GB">Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                    <name lang="en-GB">In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                    <name lang="en-GB">Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                    <name lang="en-GB">Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStateAuthorized</name>
+            <label>Order state when transaction becomes 'AUTHORIZED'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStatePending</name>
+            <label>Order state when transaction becomes 'PENDING'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStateCancelled</name>
+            <label>Order state when transaction becomes 'CANCELLED'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStateFailed</name>
+            <label>Order state when transaction becomes 'FAILED'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStateDunning</name>
+            <label>Order state when transaction becomes 'DUNNING'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderStateCreated</name>
+            <label>Order state when transaction becomes 'CREATED'</label>
+            <defaultValue>no_change</defaultValue>
+            <options>
+                <option>
+                    <id>no_change</id>
+                    <name>Don't change order status</name>
+                </option>
+                <option>
+                    <id>open</id>
+                    <name>Open</name>
+                </option>
+                <option>
+                    <id>in_progress</id>
+                    <name>In progress</name>
+                </option>
+                <option>
+                    <id>completed</id>
+                    <name>Completed</name>
+                </option>
+                <option>
+                    <id>cancelled</id>
+                    <name>Cancelled</name>
+                </option>
+            </options>
+        </input-field>
+    </card>
+</config>

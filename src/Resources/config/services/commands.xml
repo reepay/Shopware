@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ReepayPayments\Command\DevelopmentAddPaymentMethodCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="Symfony\Component\HttpKernel\Config\FileLocator"/>
+        </service>
+        <service id="ReepayPayments\Command\SetupPaymentMethodCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="ReepayPayments\Setup\PaymentMethodSetup"/>
+        </service>
+        <service id="ReepayPayments\Command\SyncInvoiceCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="ReepayPayments\Service\PaymentStatusService"/>
+        </service>
+        <service id="ReepayPayments\Command\UpdateWebhooksCommand">
+            <tag name="console.command"/>
+            <argument type="service" id="ReepayPayments\Service\Api\AccountApi"/>
+        </service>
+    </services>
+</container>

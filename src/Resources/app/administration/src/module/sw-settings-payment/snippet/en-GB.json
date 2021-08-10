@@ -1,0 +1,8 @@
+{
+    "sw-settings-payment-detail": {
+        "reepay": {
+            "cardTitle": "Reepay settings",
+            "instantSettle": "Enable instant settle"
+        }
+    }
+}
